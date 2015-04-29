@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6D73A16F-D876-498C-BFB5-D5B2FF34B2AE}</ProjectGuid>
+    <RootNamespace>LeapMotionImageCorrection</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(LEAP_DIR)\include;$(OPENCV_DIR)\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(LEAP_DIR)\include;$(OPENCV_DIR)\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(LEAP_DIR)\lib\x86;$(OPENCV_DIR)\x86\vc10\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Leap.lib;opencv_calib3d2410d.lib;opencv_contrib2410d.lib;opencv_core2410d.lib;opencv_features2d2410d.lib;opencv_flann2410d.lib;opencv_gpu2410d.lib;opencv_highgui2410d.lib;opencv_imgproc2410d.lib;opencv_legacy2410d.lib;opencv_ml2410d.lib;opencv_nonfree2410d.lib;opencv_objdetect2410d.lib;opencv_ocl2410d.lib;opencv_photo2410d.lib;opencv_stitching2410d.lib;opencv_superres2410d.lib;opencv_ts2410d.lib;opencv_video2410d.lib;opencv_videostab2410d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /yr "$(LEAP_DIR)\lib\x86\Leap.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_calib3d2410d.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_contrib2410d.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_core2410d.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_features2d2410d.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_flann2410d.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_gpu2410d.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_highgui2410d.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_imgproc2410d.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_legacy2410d.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_ml2410d.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_nonfree2410d.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_objdetect2410d.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_ocl2410d.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_photo2410d.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_stitching2410d.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_superres2410d.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_ts2410d.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_video2410d.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_videostab2410d.dll" "$(TargetDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(LEAP_DIR)\lib\x86;$(OPENCV_DIR)\x86\vc10\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Leap.lib;opencv_calib3d2410.lib;opencv_contrib2410.lib;opencv_core2410.lib;opencv_features2d2410.lib;opencv_flann2410.lib;opencv_gpu2410.lib;opencv_highgui2410.lib;opencv_imgproc2410.lib;opencv_legacy2410.lib;opencv_ml2410.lib;opencv_nonfree2410.lib;opencv_objdetect2410.lib;opencv_ocl2410.lib;opencv_photo2410.lib;opencv_stitching2410.lib;opencv_superres2410.lib;opencv_ts2410.lib;opencv_video2410.lib;opencv_videostab2410.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /yr "$(LEAP_DIR)\lib\x86\Leap.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_calib3d2410.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_contrib2410.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_core2410.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_features2d2410.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_flann2410.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_gpu2410.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_highgui2410.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_imgproc2410.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_legacy2410.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_ml2410.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_nonfree2410.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_objdetect2410.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_ocl2410.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_photo2410.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_stitching2410.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_superres2410.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_ts2410.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_video2410.dll" "$(TargetDir)"
+xcopy /yr "$(OPENCV_DIR)\x86\vc10\bin\opencv_videostab2410.dll" "$(TargetDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

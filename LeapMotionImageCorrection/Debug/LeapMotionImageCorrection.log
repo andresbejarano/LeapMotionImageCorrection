@@ -1,0 +1,75 @@
+﻿Build started 19/04/15 22:38:16.
+     1>Project "C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\LeapMotionImageCorrection\LeapMotionImageCorrection.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\Debug\LeapMotionImageCorrection.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\dev\leapmotion\LeapSDK\lib\x86 /LIBPATH:C:\dev\opencv\build\x86\vc10\lib Leap.lib opencv_calib3d2410d.lib opencv_contrib2410d.lib opencv_core2410d.lib opencv_features2d2410d.lib opencv_flann2410d.lib opencv_gpu2410d.lib opencv_highgui2410d.lib opencv_imgproc2410d.lib opencv_legacy2410d.lib opencv_ml2410d.lib opencv_nonfree2410d.lib opencv_objdetect2410d.lib opencv_ocl2410d.lib opencv_photo2410d.lib opencv_stitching2410d.lib opencv_superres2410d.lib opencv_ts2410d.lib opencv_video2410d.lib opencv_videostab2410d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\Debug\LeapMotionImageCorrection.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\Debug\LeapMotionImageCorrection.lib" /MACHINE:X86 Debug\main.obj
+         LeapMotionImageCorrection.vcxproj -> C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\Debug\LeapMotionImageCorrection.exe
+       PostBuildEvent:
+         xcopy /yr "C:\dev\leapmotion\LeapSDK\lib\x86\Leap.dll" "C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\Debug\"
+         xcopy /yr "C:\dev\opencv\build\x86\vc10\bin\opencv_calib3d2410d.dll" "C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\Debug\"
+         xcopy /yr "C:\dev\opencv\build\x86\vc10\bin\opencv_contrib2410d.dll" "C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\Debug\"
+         xcopy /yr "C:\dev\opencv\build\x86\vc10\bin\opencv_core2410d.dll" "C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\Debug\"
+         xcopy /yr "C:\dev\opencv\build\x86\vc10\bin\opencv_features2d2410d.dll" "C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\Debug\"
+         xcopy /yr "C:\dev\opencv\build\x86\vc10\bin\opencv_flann2410d.dll" "C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\Debug\"
+         xcopy /yr "C:\dev\opencv\build\x86\vc10\bin\opencv_gpu2410d.dll" "C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\Debug\"
+         xcopy /yr "C:\dev\opencv\build\x86\vc10\bin\opencv_highgui2410d.dll" "C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\Debug\"
+         xcopy /yr "C:\dev\opencv\build\x86\vc10\bin\opencv_imgproc2410d.dll" "C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\Debug\"
+         xcopy /yr "C:\dev\opencv\build\x86\vc10\bin\opencv_legacy2410d.dll" "C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\Debug\"
+         xcopy /yr "C:\dev\opencv\build\x86\vc10\bin\opencv_ml2410d.dll" "C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\Debug\"
+         xcopy /yr "C:\dev\opencv\build\x86\vc10\bin\opencv_nonfree2410d.dll" "C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\Debug\"
+         xcopy /yr "C:\dev\opencv\build\x86\vc10\bin\opencv_objdetect2410d.dll" "C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\Debug\"
+         xcopy /yr "C:\dev\opencv\build\x86\vc10\bin\opencv_ocl2410d.dll" "C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\Debug\"
+         xcopy /yr "C:\dev\opencv\build\x86\vc10\bin\opencv_photo2410d.dll" "C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\Debug\"
+         xcopy /yr "C:\dev\opencv\build\x86\vc10\bin\opencv_stitching2410d.dll" "C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\Debug\"
+         xcopy /yr "C:\dev\opencv\build\x86\vc10\bin\opencv_superres2410d.dll" "C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\Debug\"
+         xcopy /yr "C:\dev\opencv\build\x86\vc10\bin\opencv_ts2410d.dll" "C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\Debug\"
+         xcopy /yr "C:\dev\opencv\build\x86\vc10\bin\opencv_video2410d.dll" "C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\Debug\"
+         xcopy /yr "C:\dev\opencv\build\x86\vc10\bin\opencv_videostab2410d.dll" "C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\Debug\"
+         :VCEnd
+         C:\dev\leapmotion\LeapSDK\lib\x86\Leap.dll
+         1 archivo(s) copiado(s)
+         C:\dev\opencv\build\x86\vc10\bin\opencv_calib3d2410d.dll
+         1 archivo(s) copiado(s)
+         C:\dev\opencv\build\x86\vc10\bin\opencv_contrib2410d.dll
+         1 archivo(s) copiado(s)
+         C:\dev\opencv\build\x86\vc10\bin\opencv_core2410d.dll
+         1 archivo(s) copiado(s)
+         C:\dev\opencv\build\x86\vc10\bin\opencv_features2d2410d.dll
+         1 archivo(s) copiado(s)
+         C:\dev\opencv\build\x86\vc10\bin\opencv_flann2410d.dll
+         1 archivo(s) copiado(s)
+         C:\dev\opencv\build\x86\vc10\bin\opencv_gpu2410d.dll
+         1 archivo(s) copiado(s)
+         C:\dev\opencv\build\x86\vc10\bin\opencv_highgui2410d.dll
+         1 archivo(s) copiado(s)
+         C:\dev\opencv\build\x86\vc10\bin\opencv_imgproc2410d.dll
+         1 archivo(s) copiado(s)
+         C:\dev\opencv\build\x86\vc10\bin\opencv_legacy2410d.dll
+         1 archivo(s) copiado(s)
+         C:\dev\opencv\build\x86\vc10\bin\opencv_ml2410d.dll
+         1 archivo(s) copiado(s)
+         C:\dev\opencv\build\x86\vc10\bin\opencv_nonfree2410d.dll
+         1 archivo(s) copiado(s)
+         C:\dev\opencv\build\x86\vc10\bin\opencv_objdetect2410d.dll
+         1 archivo(s) copiado(s)
+         C:\dev\opencv\build\x86\vc10\bin\opencv_ocl2410d.dll
+         1 archivo(s) copiado(s)
+         C:\dev\opencv\build\x86\vc10\bin\opencv_photo2410d.dll
+         1 archivo(s) copiado(s)
+         C:\dev\opencv\build\x86\vc10\bin\opencv_stitching2410d.dll
+         1 archivo(s) copiado(s)
+         C:\dev\opencv\build\x86\vc10\bin\opencv_superres2410d.dll
+         1 archivo(s) copiado(s)
+         0 archivo(s) copiado(s)
+         No se encuentra el archivo: opencv_ts2410d.dll
+         C:\dev\opencv\build\x86\vc10\bin\opencv_video2410d.dll
+         1 archivo(s) copiado(s)
+         C:\dev\opencv\build\x86\vc10\bin\opencv_videostab2410d.dll
+         1 archivo(s) copiado(s)
+     1>Done Building Project "C:\Users\AndresMauricio\Documents\Visual Studio 2013\Projects\LeapMotionImageCorrection\LeapMotionImageCorrection\LeapMotionImageCorrection.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.52
